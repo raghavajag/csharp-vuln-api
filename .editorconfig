@@ -1,0 +1,18 @@
+# Top-most EditorConfig file
+root = true
+
+# C# files
+[*.cs]
+# IDE0051: Remove unused private member
+dotnet_diagnostic.IDE0051.severity = warning
+
+# IDE0052: Remove unread private member
+dotnet_diagnostic.IDE0052.severity = warning
+
+# IDE0059: Remove unnecessary value assignment
+dotnet_diagnostic.IDE0059.severity = warning
+
+# You might also want to include Roslynator's own specific analyzers
+# if they have equivalents or more advanced dead code detection.
+# For example, Roslynator has its own set of analyzer IDs (RRxxxx).
+# For now, let's focus on getting the standard IDE ones to show.
