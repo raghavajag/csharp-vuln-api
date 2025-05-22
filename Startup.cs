@@ -71,5 +71,22 @@ namespace dvcsharp_core_api
                 await context.Response.WriteAsync("DVCSharp API: Route not found!");
             });
         }
+
+        // Dead code functions for scanner testing
+        private void DeadCodeFunction1()
+        {
+            string userId = "123"; // Example user input
+            string query = "SELECT * FROM Users WHERE UserId = '" + userId + "'"; // Vulnerable to SQL Injection
+            // In a real scenario, this query would be executed against a database.
+            // For testing purposes, we just define it.
+            Console.WriteLine($"Executing query: {query}");
+            int x = 42;
+            string msg = "This is dead code with a SQL injection vulnerability.";
+        }
+
+        private int DeadCodeFunction2(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
